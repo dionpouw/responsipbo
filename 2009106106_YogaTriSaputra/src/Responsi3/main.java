@@ -20,6 +20,7 @@ public class main {
         System.out.println("Jenis Barang   : " + baru.getJenisbarang());
         //Override
         System.out.println("\n");
+
         baru.lihat();
 
         System.out.println("\n=============================================================");
