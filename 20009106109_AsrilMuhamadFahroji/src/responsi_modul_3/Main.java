@@ -1,6 +1,6 @@
-package responsi;
+package responsi_modul_3;
 
-import responsi.Novel;
+import responsi_modul_3.Novel;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class Main {

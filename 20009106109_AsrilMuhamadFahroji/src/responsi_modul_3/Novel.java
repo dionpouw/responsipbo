@@ -1,4 +1,4 @@
-package responsi;
+package responsi_modul_3;
 
 
 public class Novel {
