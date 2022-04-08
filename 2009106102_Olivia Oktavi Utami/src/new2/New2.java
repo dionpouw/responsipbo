@@ -4,85 +4,35 @@
  * and open the template in the editor.
  */
 package new2;
- class Microwave{
-     public String Name;
-     public String Brand;
-     public double version;
-     private int Price;
-     private int  stock;
-     private int id; 
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-     //setter
-    public double getVersion() {
-        return version;
-    }
-//setter
-    public void setVersion(double version) {
-        this.version = version;
-    }
-
-     
-     //getter
-    public int getPrice() {
-        return Price;
-    }
-    //setter
-    public void setPrice(int price) {
-        this.Price = Price;
-    }
- //getter
-    public int getStock() {
-        return stock;
-    }
-//setter
-    public void setStock(int stock) {
-        this.stock = stock;
-    }    
-     
-     public Microwave(){
-         this.Name = ("cute pink micro for teeneger");
-         this.Price = 5000;
-         this.Brand = ("MITO");
-         this.id = 2009106102;
-     }
-     void display(){
-         System.out.println(this.stock);
-         System.out.println(this.version);
-     }
-     
- }
 public class New2 {
 
     public static void main(String[] args) {
 
+        Microwave object = new Microwave ("mito","ini",17.3,9000,90,456);
         // read and write menggunaka public 
-        Microwave ini = new Microwave();
-        System.out.println(" Name  : " + ini.Name);
+
+        System.out.println(" Name  : " + object.Name);
+        System.out.println(" Name  : " + object.Brand);
+        System.out.println(" Name  : " + object.version);
+        System.out.println(" Name  : " + object.getPrice());
+        System.out.println(" Name  : " + object.getStock());
         
-            //read only menggunakan getter     
-        int NO = ini.getId();
-        System.out.println("id pengguna : " + NO);
- 
-        int harga = ini.getPrice();
-        System.out.println(" Harga : " + harga);
+        
+        object.Name("olip");
+        
+         //read only menggunakan getter     
         
         //write only menggunakan setter 
-        ini.setStock(10);
-        ini.display();
+        //ini.setStock(10);
+        //ini.display();
         
         //gabungan dari read dan wrtite dengan setter dan getter 
         
-        System.out.println("Brand microwave ini : " + ini.Brand);
+        //System.out.println("Brand microwave ini : " + ini.Brand);
         
-        ini.setVersion(1.3);
-        ini.display();
+        //ini.setVersion(1.3);
+        //ini.display();
     }
     
 }
